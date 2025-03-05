@@ -16,6 +16,38 @@
         gap: 30px;
       }
       /* ✅ Beter voorbeeld van continiuity */
+        .good-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            background-color: antiquewhite;
+            padding: 1rem;
+            height: auto;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .good-nav li {
+            display: flex;
+            align-items: center;
+        }
+
+        .good-nav li a {
+            text-decoration: none;
+            padding: 1.5rem 2rem;
+            color: black;
+        }
+
+        .good-nav li:not(:last-child)::after {
+          content: ">"; 
+          margin-left: 10px;
+          color: gray;
+        }
+
+        .good-nav li :hover{
+          background-color: aliceblue;
+        }
     </style>
   </head>
   <body>
